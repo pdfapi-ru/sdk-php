@@ -1,0 +1,27 @@
+{
+    "name": "pdfapi/pdfapi",
+    "description": "Официальный PHP SDK pdfapi: HTML, URL, Markdown и Office в PDF одним вызовом",
+    "type": "library",
+    "keywords": ["pdf", "html-to-pdf", "markdown", "docx", "api"],
+    "homepage": "https://pdfapi.ru",
+    "require": {
+        "php": ">=8.2",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": { "PdfApi\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "PdfApi\\Tests\\": "tests/" }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
